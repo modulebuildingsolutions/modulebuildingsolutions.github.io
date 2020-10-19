@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MBS</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light static-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+              <img src="images/ic_main_logo.PNG" class="navbar-brand" alt="">
+            </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faq.html">FAQ
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        
+        <form class="form-inline my-2 my-lg-0">
+          <button href="contact.html" class="btn menu-right-btn border" type="submit">
+            Contact
+          </button>
+        </form>
+      </div>
+    </nav>
+
+  </header>
+
+  <main>
+    <div class="container-fluid p-0">
+      <div class="site-content">
+        <div class="d-flex justify-content-center">
+          <div class="d-flex flex-column">
+            <h1 class="site-title">Contact Us Today</h1>
+
+            <div class="d-flex flexrow">
+              <input type="button" value="Home" class="btn site-btn1 px-4 py-3 mr-4 btn-dark">
+              <input type="button" value="FAQ" class="btn site-btn2 px-4 py-3 mr-4 btn-light">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+          <!-- info panel -->
+          <div class="row justify-content-center">
+            <div class="col-10 info-panel">
+              <div class="row">
+                <div class="col-sm">
+                  <i class="fas fa-clock img-fluid float-left" style="font-size: 100px; margin-right: 20px; color: rgb(12, 51, 36)"></i>
+                  <h4>Free-up your time</h4>
+                  <p>Time is precious and we know that.</p>
+                </div>
+                <div class="col-lg">
+                  <i class="fas fa-handshake img-fluid float-left" style="font-size: 100px; margin-right: 20px; color: rgb(12, 51, 36)"></i>
+                  <h4>Experienced</h4>
+                  <p>25 years of experience</p>
+                </div>
+                <div class="col-lg">
+                  <i class="fas fa-certificate img-fluid float-left" style="font-size: 100px; margin-right: 20px; color: rgb(12, 51, 36)"></i>
+                  <h4>Quality</h4>
+                  <p>Enhance your bottom line</p>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+  <!-- Contact Section -->
+  <section class="contact section" id="contact">
+    <div class="container">
+       <div class="row">
+           <div class="section-title padd-40">
+           </div>
+       </div>
+       <div class="row">
+           <!-- contact-info-item -->
+           <div class="contact-info-item padd-15">
+               <div class="icon"><i class="fa fa-phone"></i></div>
+               <h4>Call Me On</h4>
+               <p>(+00) 0000 000 000</p>
+           </div>
+           <!-- contact-info-item End -->
+           <!-- contact-info-item -->
+           <div class="contact-info-item padd-15">
+               <div class="icon"><i class="fa fa-map-marker"></i></div>
+               <h4>Location</h4>
+               <p>Mount Maunganui, New Zealand</p>
+           </div>
+           <!-- contact-info-item End -->
+           <!-- contact-info-item -->
+           <div class="contact-info-item padd-15">
+               <div class="icon"><i class="fa fa-envelope"></i></div>
+               <h4>Email</h4>
+               <p>kevin@modularbuildingsolutions.co.nz</p>
+           </div>
+           <!-- contact-info-item End -->
+       </div>
+
+       <!-- Contact Form -->
+        <div class="row">
+           <form class="contact-form padd-15" action="https://formspree.io/f/moqpekyw" method="POST">
+               <div class="row">
+                   <div class="form-item col-12 padd-15">
+                     <div class="form-group">
+                         <input type="text" class="form-control" placeholder="Email*" name="_replyto">
+                     </div>
+                   </div>
+               </div>
+               <div class="row">
+                 <div class="form-item col-12 padd-15">
+                     <div class="form-group">
+                         <textarea  class="form-control" placeholder="Your Message..." name="message"></textarea>
+                     </div>
+                   </div>
+               </div>
+               <div class="row">
+                 <div class="col-12 padd-15">
+                     <button type="submit" class="btn" style="color: white; background-color: rgb(230, 100, 32);">Send</button>
+                   </div>
+               </div>
+           </form>
+        </div>
+       <!-- Contact Form End-->
+    </div>
+ </section>
+<!-- Contact Section End -->
