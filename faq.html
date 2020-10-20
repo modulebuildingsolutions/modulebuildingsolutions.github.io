@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="js/script.js"></script>
 
   </head>
   <body>
@@ -26,7 +27,7 @@
                 <a class="nav-link" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#">How it works</a>
               </li>
               <li class="nav-item active">
                 <a class="nav-link" href="#">FAQ
@@ -52,8 +53,8 @@
               <h1 class="site-title">Frequently Asked Questions</h1>
 
               <div class="d-flex flexrow">
-                <input type="button" value="Contact Us" class="btn site-btn1 px-4 py-3 mr-4 btn-dark">
-                <input type="button" value="Home" class="btn site-btn2 px-4 py-3 mr-4 btn-light">
+                <input type="button" value="Contact Us" class="btn site-btn1 px-4 py-3 mr-4 btn-dark" onClick="javascript:contact()">
+                <input type="button" value="Home" class="btn site-btn2 px-4 py-3 mr-4 btn-light" onClick="javascript:home()">
 
               </div>
             </div>
@@ -201,11 +202,11 @@
             </div>
             <div>
               <i class="fa fa-phone"></i>
-              <p> (+00) 0000 000 000</p>
+              <p> (+64) 273 948 911</p>
             </div>
             <div>
               <i class="fa fa-envelope"></i>
-              <p><a href="#"> kevin@modularbuildingsolutions.co.nz</a></p>
+              <p><a href="mailto:kevin@modularbuildingsolutions.co.nz"> kevin@modularbuildingsolutions.co.nz</a></p>
             </div>
           </div>
     
@@ -230,15 +231,5 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>    
         <script src="https://unpkg.com/scrollreveal"></script>
     
-        <script>
-          window.sr = ScrollReveal({duration: 1500});
-          sr.reveal('.site-content .d-flex');
-          sr.reveal('.section-1 .card');
-          sr.reveal('.section-2 .d-flex');
-          sr.reveal('.section-3 .col-md-4');
-          sr.reveal('.section-4 .col-md-5 .col-md-7');
-    
-        </script>
-
-        </body>
-        </html>
+    </body>
+</html>
