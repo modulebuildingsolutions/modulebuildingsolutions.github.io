@@ -140,6 +140,7 @@ table.google-visualization-orgchart-table {
 .flowChartArea {
 margin-bottom: 40px;
 overflow: hidden;
+padding:10px 30px 30px 100px;
 }
 
 .flowChartArea2 {
