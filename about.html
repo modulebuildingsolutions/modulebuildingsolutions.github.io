@@ -44,7 +44,7 @@
       </nav>
     </header>
 
-    <main>
+    <main class="flex-wrapper">
         <div class="container-fluid p-0">
             <div class="site-content">
               <div class="d-flex justify-content-center">
@@ -84,7 +84,7 @@
                   </div>
                 </div>
 
-            <div class="bg-white">
+        <div class="bg-white flowChartArea">
             <div id="curve_chart" class="chart img-fluid float-left"></div>
 
             <div class="vertical-left"></div>
@@ -114,22 +114,21 @@
             </div>
 
 
-            <div class="bg-light ">
-                <!--<div id="chart_div" class="chart img-fluid float-right"></div>-->
+            <div class="bg-light flowChartArea2 ">
+                <div id="chart_div" class="chart2 img-fluid float-right"></div>
 
                 <div class="vertical-right"></div>
     
                 <div id="about" class="container-fluid">
                     <div class="row">
                     <div class="col-ml-8">
-                        <h2>(ignore this, still working on a flow chart)</h2><br>
-                        <h4>We expect to be able to add at least 30% to your gross development margin from savings in build costs and funding costs.
-                            Your capital is therefore tied up for a much shorter period – this gives you the ability to take on many more opportunities.
-                            We simplify the process. We are a one stop shop. We take care of design, consenting, site preparation, module installation and finishing.
+                        <h2>How do we do it?</h2><br>
+                        <h4>
+                        The earlier you involve Modular Building Solutions the better – ideally modular units are designed in early concept design. Existing designs can be adapted any time. A change to modular can be made after siteworks has been done right up until building commences.
+                        <br><br>Even allowing for the extra time for re-design, re-consenting and shipping, the end date can still be achieved as the manufacturing time is so much shorter than site construction times (see timeframe comparison)
+                        <br><br>The completed modules are insured, securable assets when received by our freight forwarders in China. NZ funders should release payment based on this
                         </h4><br>
-                        <p>We have unlimited factory capacity and an exclusive in-house team of NZ based importation experts and offshore based quality inspectors
-                            <br>The modules arrive finished - even including the furniture if required
-                            </p>
+
                         <br>
                         <form action="contact.html" >  
                         <button class="btn btn-default" style="background-color: rgb(230, 100, 32); color: white;" type="submit">Contact Us</button>
@@ -142,7 +141,7 @@
                     </div>
                 </div>
             </div>
-
+        </dvi>
 
               
         </main>
@@ -286,18 +285,31 @@
       function drawChart() {
         var data = new google.visualization.DataTable();
         data.addColumn('string', 'Name');
+        data.addColumn('string', 'Manager');
+        data.addColumn('string', 'ToolTip');
 
         // For each orgchart box, provide the name, manager, and tooltip to show.
-            data.addRows([
-
-               ['Assess plans for conversion to modular'],
-
-
-               [{v:'Jim', f:'Jim<div style="color:red; font-style:italic">Vice President</div>'},'Roberdt'],
-               ['Alice', 'Roberdt'],
-               ['Bob', 'Jim'],
-               ['Carol', 'Bob']
-            ]);	
+        data.addRows([
+          ['Assess plans for conversion to modular','', ''],
+          ['Budget estimate & indicative programme','Assess plans for conversion to modular', ''],
+          [{'v':'Engage Modular Building Solutions', 
+            'f':'<div style="color:red; font-style:italic">Engage Modular Building Solutions</div>'},
+            'Budget estimate & indicative programme', ''],
+          ['Building Consent', 'Engage Modular Building Solutions', ''],
+          
+          ['Site Preparation', 'Building Consent', ''],
+          ['Commence manufacturing of modules', 'Building Consent', ''],
+          ['Manufacturing completion', 'Commence manufacturing of modules', ''],
+          ['10% deposit', 'Commence manufacturing of modules', ''],
+          ['Shipping', 'Manufacturing completion', ''],
+          ['40% progress payment', 'Manufacturing completion', ''],
+          ['Installation', 'Shipping', ''],
+				  ['Installation', 'Site Preparation', ''],
+          ['Code Compliance Certificate', 'Installation', ''],
+          ['Final Payment', 'Code Compliance Certificate', ''],
+          
+    
+        ]);
 
         // Create the chart.
         var chart = new google.visualization.OrgChart(document.getElementById('chart_div'));
