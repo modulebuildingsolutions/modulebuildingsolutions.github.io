@@ -11,7 +11,7 @@ body {
 }
 
 .navbar-brand {
-	width: 60%;
+	width: 50%;
 	height: auto !important;
 }
 
@@ -119,22 +119,38 @@ body {
     color: #acacac;
 }
 
-/*CHART*/
+.info-panel i {
+  font-size: 100px;
+}
+
+
+
+/*CHARTS*/
 
 .chart {
-  width: 900px;
-  height: 500px;
+  width: 55vw;
+  height: 50vh;
   margin-bottom: 40px;
 }
 
-.chart2 {
-width:900px !important; 
-height:500px !important;
-font-size:12px;
+#timeline {
+  height: 500px;
+  padding: 30px;
+  position: absolute;
+  margin-top: 400px;
+}
+
+#modular {
+  height: 500px;
+  padding: 30px;
+}
+
+#modular, #timeline {
+  width: 40vw;
 }
 
 table{
-border-collapse: separate !important;
+  border-collapse: separate !important;
 }
 
 
@@ -143,16 +159,64 @@ table.google-visualization-orgchart-table {
 }
 
 .flowChartArea {
-margin-bottom: 40px;
-overflow: hidden;
-padding:10px 30px 30px 100px;
+  margin-bottom: 40px;
+  overflow: hidden;
+  padding:10px 30px 30px 100px;
+}
+
+.roiChart {
+  margin-bottom: 40px;
+  overflow: hidden;
+  padding:10px 30px 30px 100px;
 }
 
 .flowChartArea2 {
-min-height: 5px;
-overflow: hidden;
-padding:10px 30px 30px 100px;
+  min-height: 5px;
+  overflow: hidden;
+  padding:10px 30px 30px 100px;
 }
+
+@media screen and (max-width: 1250px) {
+
+  .chart {
+    width: 40vw;
+  }
+  .chart2 {
+    font-size: 70%;
+  } 
+}
+
+@media screen and (max-width: 1000px) {
+
+  .chart2 {
+    font-size: 130%;
+  } 
+}
+
+@media screen and (max-width: 400px) {
+
+  .chart2 {
+    display: none;
+  } 
+}
+
+
+
+
+@media screen and (max-width: 680px) {
+
+  .chart, .ganttChartTitle {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
 
 .flex-wrapper {
   display: flex;
@@ -190,6 +254,9 @@ padding:10px 30px 30px 100px;
     margin-bottom: 8%;
 }
 
+.homeName {
+  font-size: 16px;
+}
 
 /*SECTION 2*/
 
@@ -582,7 +649,10 @@ section {
 @media screen and (max-width: 990px) {
 	.section-4 .col-md-7 img {
 		width: 400px;
-	}
+  }
+  .info-panel i {
+    font-size: 30px;
+  }
 }
 
 @media screen and (max-width: 768px) {

@@ -21,3 +21,10 @@ function faq() {
     window.location.href = "faq.html";
 }
 
+function about() {
+    window.location.href = "about.html";
+}
+
+function howItWorks() {
+    window.location.href = "howItWorks.html";
+}
